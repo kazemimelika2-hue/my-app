@@ -16,7 +16,7 @@ export default function Register() {
             await registerUser(user, password, password2);
             router.push('/login');
         } catch (err) {
-            setWarning(err.message);
+            setWarning(err.message || err.toString());
         }
     }
 
