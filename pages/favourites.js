@@ -6,9 +6,9 @@ import BookCard from '@/components/BookCard';
 
 export default function Favourites() {
     const [favouritesList] = useAtom(favouritesAtom);
-
+    
     if (!favouritesList) return null;
-
+    
     return (
         <>
             <PageHeader text="Favourites" subtext="Your saved books" />
